@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function Lanyard() {
     const discordActivity = GetLanyardData();
-    const [mouseOver, setMouseOver] = useState(false);
     const [overFlow, setOverFlow] = useState(false);
 
     try {
@@ -19,7 +18,6 @@ export default function Lanyard() {
                         (discordActivity?.listening_to_spotify) ?
                         <div id="spotify-listening" className="text-sm flex items-center text-black dark:text-white border-[1px] border-[rgb(100,100,100)] shadow-lg dark:shadow-[0_0_10px_5px_rgb(255,255,255,0.1)] rounded py-1.5 px-3 h-[38px] max-w-[calc(100%-90px)] overflow-hidden"
                             onMouseOver={(e) => {
-                                setMouseOver(true);
                                 let spotifySong = document.getElementById("spotify-s");
                                 if (spotifySong === null) return;
                                 if (spotifySong?.scrollWidth > spotifySong?.offsetWidth) {
@@ -27,7 +25,6 @@ export default function Lanyard() {
                                 }
                             }}
                             onMouseLeave={() => {
-                                setMouseOver(false);
                                 setOverFlow(false);
                             }}
                         >   
@@ -35,7 +32,7 @@ export default function Lanyard() {
                                 initial={{translateX: 0}}
                                 animate={
                                     (overFlow) ? {
-                                        translateX:[0,-1*(document.getElementById("spotify-s").scrollWidth - document.getElementById("spotify-s").offsetWidth), 0]
+                                        translateX:[0,-1*(document.getElementById("spotify-s")!.scrollWidth - document.getElementById("spotify-s")!.offsetWidth), 0]
                                     } : {translateX: 0}
                                 }
                                 transition={
