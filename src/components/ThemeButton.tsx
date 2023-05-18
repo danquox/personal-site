@@ -1,37 +1,24 @@
-import { useEffect, useState } from "react";
-
-type Theme = {
-    theme: any
-}
+import { useTheme } from "next-themes";
 
 export default function ThemeButton() {
-    const [theme, setTheme] = useState<Theme>({theme:""});
-
-    const getLocalStorageItem = (key:string) => {
-        return typeof window !== undefined ? localStorage.getItem(key) : "";
-
-    }
-
-    useEffect(() => {
-        setTheme({theme: getLocalStorageItem("theme")});
-    }, []);
+    const { theme, setTheme } = useTheme();
 
     return (
         <button className="relative ml-auto aspect-square w-7"
             onClick={() => {
-                if (theme?.theme === "dark") {
+                if (theme==="dark") {
                     document.body.classList.remove("dark");
                     localStorage.setItem("theme", "light");
-                    setTheme({theme: "light"});
+                    setTheme("light");
                 } else {
                     document.body.classList.add("dark");
                     localStorage.setItem("theme", "dark");
-                    setTheme({theme: "dark"});
+                    setTheme("dark");
                 }
             }}
         >
             {
-                (theme?.theme === "dark") 
+                (theme === "dark") 
                 ? 
                     <svg className={`absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] fill-black dark:fill-white w-3/5`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z"/></svg>
                 :
