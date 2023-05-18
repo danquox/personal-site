@@ -1,6 +1,5 @@
 import Lanyard from "@/components/Lanyard";
 import { easeOut, motion } from "framer-motion";
-import Link from "next/link";
 import { container, containerChildren } from "@/components/framer-animations/ContainerAnimation";
 
 export default function about() {
@@ -32,23 +31,23 @@ export default function about() {
                 >
                     
                     <motion.div variants={containerChildren}>
-                        <Link className="flex w-fit" href={"/about/anime"}>
+                        <a className="flex w-fit" href={"/about/anime"}>
                             <p className="underline mr-1.5">anime</p>
                             {"->"}
-                        </Link>
+                        </a>
                     </motion.div>
                     <motion.div variants={containerChildren}>
-                        <Link className="flex w-fit" href={"/about/novel"}>
+                        <a className="flex w-fit" href={"/about/novel"}>
                             <p className="underline mr-1.5">manga / manhwa</p>
                             {"->"}
-                        </Link>
+                        </a>
                     </motion.div>
                     <motion.p variants={containerChildren}>cats</motion.p>
                     <motion.div variants={containerChildren}>
-                        <Link className="flex w-fit" href={"/about/keyboards"}>
+                        <a className="flex w-fit" href={"/about/keyboards"}>
                             <p className="underline mr-1.5">keyboards</p>
                             {"->"}
-                        </Link>
+                        </a>
                     </motion.div>
                 </motion.div>
             </motion.div>
