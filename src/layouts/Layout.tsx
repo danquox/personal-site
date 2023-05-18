@@ -9,6 +9,10 @@ type DefaultLayout = {
 export default function Layout({children}: DefaultLayout) {
     return (
         <>
+            <Head>
+                <title>danquo</title>
+                <meta rel="description" content="personal website for danquo"></meta>
+            </Head>
             <Header></Header>
             <main className="flex flex-col w-full">{children}</main>
             <Footer></Footer>
