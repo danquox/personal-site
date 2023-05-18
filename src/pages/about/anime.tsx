@@ -28,7 +28,7 @@ export default function Anime() {
                             >
                                 <Image className={`group object-cover object-${anime.position} h-32 max-h-24 sm:max-h-32 rounded-xl`} src={anime.src} alt={anime.src} width="1000" height="1000" unoptimized={true}></Image>
                                 <div className="opacity-0 group-hover:opacity-100 absolute flex items-center justify-center transition-opacity duration- bg-[rgb(0,0,0,0.75)] h-full w-full rounded-xl top-0 text-white">
-                                    <p className="text-white text-lg font-['InterBold'] font-extrabold">{anime.title}</p>
+                                    <p className="text-white text-lg font-['Instrument_Sans'] font-extrabold">{anime.title}</p>
                                     <div className="absolute text-xl right-0 top-0 -rotate-45 mx-1">{"->"}</div>
                                 </div>
                             </motion.a>
