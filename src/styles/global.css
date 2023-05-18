@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html.dark body {
+    background-color: #000;
+}
+
 body {
     font-family: "Inter";
     padding: 0 40px;
