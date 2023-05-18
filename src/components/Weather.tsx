@@ -5,7 +5,7 @@ export default function Weather() {
     const [f, setF] = useState(null);
 
     useEffect(() => {
-        fetch(`http://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API}&q=22151&aqi=no`) 
+        fetch(`https://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API}&q=22151&aqi=no`) 
         .then(response => response.json())
         .then(data => {
             let current = data["current"];
