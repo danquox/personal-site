@@ -48,7 +48,7 @@ export default function Sites() {
                                         return (
                                             <div key={site.name} className="relative group">
                                                 {languageSVG}
-                                                <div className="absolute text-sm bg-[rgb(0,0,0,0.8)] border-[1px] border-[rgb(30,30,30)] rounded my-1 py-0.5 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                                                <div className="absolute text-white text-sm bg-[rgb(0,0,0,0.8)] border-[1px] border-[rgb(30,30,30)] rounded my-1 py-0.5 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
                                                     {language}
                                                 </div>
                                             </div>
