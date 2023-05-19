@@ -20,7 +20,7 @@ export default function Weather() {
     if (!f) return null;
     return (
         <div className="flex text-sm items-center gap-2 text-black dark:text-white border-[1px] border-[rgb(100,100,100)] shadow-lg dark:shadow-[0_0_10px_5px_rgb(255,255,255,0.1)] rounded py-1.5 px-3 w-fit h-[38px]">
-            <p>
+            < p className="overflow-hidden whitespace-nowrap text-ellipsis">
                 It's currently
                 <span className="group text-sm mx-1">
                     <span className="group-hover:hidden underline inline-block">
