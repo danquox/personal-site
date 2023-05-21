@@ -14,7 +14,7 @@ function Index() {
                 animate="visible"
             >
                 <motion.h1 className="text-4xl" variants={containerChildren}>hi, i'm Dang</motion.h1>
-                <motion.p className="text-xl text-[rgb(150,150,150)]" variants={containerChildren}>student web developer</motion.p>
+                <motion.p className="text-xl text-[rgb(150,150,150)]" variants={containerChildren}>web developer</motion.p>
                 <motion.div className="mt-2" variants={containerChildren}>
                     <Time></Time>
                 </motion.div>
