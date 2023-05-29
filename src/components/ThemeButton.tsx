@@ -6,7 +6,7 @@ export default function ThemeButton() {
     const { theme, setTheme } = useTheme();
     useEffect(() => {
         setCurrentTheme({theme:(theme === undefined) ? "" : theme});
-    })
+    }, [])
 
     return (
         <button className="relative ml-auto aspect-square w-7"

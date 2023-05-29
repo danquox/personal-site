@@ -7,7 +7,8 @@ export default function Header() {
             <a className="flex items-center gap-2 h-full" href="/"> 
                 <p>danquo</p>
             </a>
-            <div className="flex gap-2 text-[rgb(150,150,150)] mx-2">
+            <div className="flex gap-2 text-[rgb(150,150,150)] mx-1">
+                <a href="/blogs">blogs</a>
                 <a href="/works">works</a>
                 <a href="/about">about</a>
             </div>

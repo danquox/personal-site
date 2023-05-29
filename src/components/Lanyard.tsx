@@ -16,7 +16,10 @@ export default function Lanyard() {
                     </div>
                     {
                         (discordActivity?.listening_to_spotify) ?
-                        <div id="spotify-listening" className="text-sm flex items-center text-black dark:text-white border-[1px] border-[rgb(100,100,100)] shadow-lg dark:shadow-[0_0_10px_5px_rgb(255,255,255,0.1)] rounded py-1.5 px-3 h-[38px] max-w-[calc(100%-90px)] overflow-hidden"
+                        <motion.div id="spotify-listening" className="text-sm flex items-center text-black dark:text-white border-[1px] border-[rgb(100,100,100)] shadow-lg dark:shadow-[0_0_10px_5px_rgb(255,255,255,0.1)] rounded py-1.5 px-3 h-[38px] max-w-[calc(100%-90px)] overflow-hidden"
+                            initial={{opacity:0}}
+                            animate={{opacity:1}}
+                            transition={{duration:0.2}}
                             onMouseOver={(e) => {
                                 let spotifySong = document.getElementById("spotify-s");
                                 if (spotifySong === null) return;
@@ -42,7 +45,7 @@ export default function Lanyard() {
                                 <p id="spotify-m" className="whitespace-nowrap">Listening to</p>
                                 <a id="spotify-s" className={`${(overFlow) ? "": "overflow-hidden text-ellipsis"} whitespace-nowrap underline`} href={`https://open.spotify.com/track/${discordActivity.spotify?.track_id}`} target="_blank">{discordActivity.spotify?.song}</a>
                             </motion.div>
-                        </div>
+                        </motion.div>
                         : null
                     }
                 </div>
