@@ -83,7 +83,7 @@ export default function Blog({blog}: {blog:BlogData}) {
                                                     return (
                                                         <div>
                                                             <p className="text-center inline-block text-sm text-[rgb(180,180,180)] dark:text-[rgb(80,80,80)] mx-1.5 w-2">{lines+=1}</p>
-                                                            <p className={`inline-block text-sm text-[rgb(130,130,130)] mx-1 indent-${entry.indent * 2}`}>{entry.text}</p>
+                                                            <p className={`inline-block text-sm text-[rgb(130,130,130)] mx-1 text-left indent-${entry.indent * 2}`}>{entry.text}</p>
                                                         </div>
                                                     )
                                                 })
