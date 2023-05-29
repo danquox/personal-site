@@ -17,7 +17,7 @@ export default function Sites() {
                     <motion.div className="shadow-lg dark:shadow-none rounded-2xl" key={site.name} variants={containerChildren}
                         whileHover={{scale:1.025, transition:{duration:0.2}}}
                     >
-                        <Image className="rounded-t-2xl border-[1px] dark:border-[rgb(30,30,30)] w-full" src={site.src} alt={site.src} width="4000" height="4000"></Image>
+                        <Image className="rounded-t-2xl border-[1px] dark:border-[rgb(30,30,30)] w-full h-[180px]" src={site.src} alt={site.src} width="4000" height="4000"></Image>
                         <div className="flex flex-col dark:bg-[rgb(12,12,12)] text-black dark:text-white p-3 border-[1px] border-t-0 dark:border-[rgb(30,30,30)] rounded-b-2xl">
                             <p>{site.name}</p>
                             <a className="text-sm text-[rgb(130,130,130)] hover:underline my-0.5 w-fit" href={"https://" + site.href} target="_blank">{site.href}</a>
