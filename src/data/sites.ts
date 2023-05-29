@@ -14,7 +14,7 @@ export const SiteData: Site[] = [
     },
     {
         name: "Library",
-        href: "danquox.github.io/library",
+        href: "library.danquo.com",
         src: "/img/library.png",
         languages: ["JavaScript", "ReactJS"]
     },
