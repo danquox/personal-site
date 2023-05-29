@@ -28,6 +28,6 @@ export const SiteData: Site[] = [
         name: "Notes App",
         href: "notes.danquo.com",
         src: "/img/notes.png",
-        languages: ["TypeScript", "NextJS", "TailwindCSS"]
+        languages: ["TypeScript", "NextJS", "TailwindCSS",]
     }
 ]
