@@ -11,7 +11,7 @@ export default function Blogs() {
                 initial="hidden"
                 animate="visible"
             >
-                {BlogData.reverse().map(blog => {
+                {BlogData.map(blog => {
                     return (
                     <motion.a className="flex flex-col border-l-2 border-[rgb(200,200,200)] dark:border-[rgb(70,70,70)] text-black dark:text-white w-full py-1.5 px-3 rounded-l-sm" href={`/blogs/${blog.id}`} variants={containerChildren}>
                         <p>{blog.data.title}</p>
