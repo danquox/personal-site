@@ -86,4 +86,14 @@ export const BlogData: Blog[] = [
             ]
         }
     },
+    {
+        id: "2",
+        data: {
+            title: "Adding Font Awesome to my Projects",
+            description: "Using Font Awesome Icons in React and Next",
+            description_full: "I've started to use Font Awesome Icons a lot in my personal projects, and I thought that I would talk about it so that I don't forget 😅",
+            date: "June 1st, 2023",
+            details: []
+        }
+    }
 ]
