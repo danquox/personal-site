@@ -86,4 +86,56 @@ export const BlogData: Blog[] = [
             ]
         }
     },
+    {
+        id: "2",
+        data: {
+            title: "Adding Font Awesome to my Projects",
+            description: "Using Font Awesome Icons in React and Next",
+            description_full: "I've started to use Font Awesome Icons a lot in my personal projects, and I thought that I would talk about it so that I don't forget 😅",
+            date: "June 1st, 2023",
+            details: [
+                {
+                    type: "text",
+                    text: "Install these packages"
+                },
+                {
+                    type: "code",
+                    code: [
+                        {indent:0, text: "npm install --save @fortawesome/fontawesome-svg-core"},
+                        {indent:0, text: "npm install --save @fortawesome/free-solid-svg-icons"},
+                        {indent:0, text: "npm install --save @fortawesome/react-fontawesome"}
+                    ]
+                },
+                {
+                    type: "text",
+                    text: "In your root layout or app file"
+                },
+                {
+                    type: "code",
+                    code: [
+                        {indent:0, text: "import \"@fortawesome/fontawesome-svg-core/styles.css\";"},
+                        {indent:0, text: "import { config } from \"@fortawesome/fontawesome-svg-core\";"},
+                        {indent:0, text: "config.autoAddCss = false;"}
+                    ]
+                },
+                {
+                    type: "text",
+                    text: "In another file"
+                },
+                {
+                    type: "desc",
+                    desc: "You can now import the FontAwesomeIcon component"
+                },
+                {
+                    type: "code",
+                    code: [
+                        {indent:0, text: "import { FontAwesomeIcon } from \"@fortawesome/react-fontawesome\";"},
+                        {indent:0, text: "import { faCircle } from \"@fortawesome/free-solid-svg-icons\";"},
+                        {indent:0, text: ""},
+                        {indent:0, text: "<FontAwesomeIcon icon={faCircle}>"},
+                    ]
+                },
+            ]
+        }
+    }
 ]

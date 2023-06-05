@@ -13,7 +13,7 @@ export default function Blogs() {
             >
                 {BlogData.map(blog => {
                     return (
-                    <motion.a className="flex flex-col border-l-2 border-[rgb(200,200,200)] dark:border-[rgb(70,70,70)] text-black dark:text-white w-full py-1.5 px-3 rounded-l-sm" href={`/blogs/${blog.id}`} variants={containerChildren}>
+                    <motion.a key={blog.id} className="flex flex-col border-l-2 border-[rgb(200,200,200)] dark:border-[rgb(70,70,70)] text-black dark:text-white w-full py-1.5 px-3 rounded-l-sm" href={`/blogs/${blog.id}`} variants={containerChildren}>
                         <p>{blog.data.title}</p>
                         <p className="text-[rgb(150,150,150)] text-sm mt-1">{blog.data.description}</p>
                     </motion.a>
