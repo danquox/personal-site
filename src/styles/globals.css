@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Neue Montreal";
+}
+
+@font-face {
+  src: url("../assets/NeueMontreal-Regular.otf");
+  font-family: "Neue Montreal";
+}
