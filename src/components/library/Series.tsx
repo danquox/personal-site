@@ -17,7 +17,7 @@ export default function Series() {
                 unoptimized
               >
               </Image>
-              <div className="absolute top-0 left-0 w-full h-full bg-black/60 opacity-0 group-hover:opacity-100 duration-200 z-[2]">
+              <div className="absolute top-0 left-0 w-full h-52 sm:h72 bg-black/60 opacity-0 group-hover:opacity-100 duration-200 z-[2]">
                 <div className="absolute bottom-0 left-0 m-3 my-4">
                   <span className="text-xl sm:text-2xl text-white font-bold inline-block w-full">{series.name}</span>
                   {
