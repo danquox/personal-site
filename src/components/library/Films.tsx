@@ -18,7 +18,7 @@ export default function Films() {
               >
               </Image>
               <div className="absolute top-0 left-0 w-full h-52 sm:h-72 bg-black/60 opacity-0 group-hover:opacity-100 duration-200 z-[2]">
-                <div className="absolute bottom-0 left-0 m-3 my-4">
+                <div className="absolute bottom-0 left-0 m-2 sm:m-3 my-3 sm:my-4">
                   <span className="text-lg sm:text-2xl text-white font-bold inline-block w-full">{film.name}</span>
                   {
                     film.translation !== undefined ?
